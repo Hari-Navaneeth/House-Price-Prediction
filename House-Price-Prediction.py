@@ -22,9 +22,9 @@ for i in range(1,number+1):
 
 #Model Training
 print("Wait for Few Seconds to Train a Model......")
-xs = np.array(no_of_rooms, dtype=float)
-ys = np.array(house_price, dtype=float)
-model.fit(xs, ys, epochs=1000)
+Rooms_in_House = np.array(no_of_rooms, dtype=float)
+Price_of_House = np.array(house_price, dtype=float)
+model.fit(Rooms_in_House, Price_of_House, epochs=1000)
 print("==============================================================================")
 
 #Prediction takes place here
